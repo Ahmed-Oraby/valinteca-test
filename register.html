@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="./register.js" defer></script>
+		<title>Register</title>
+	</head>
+	<body>
+		<div class="register container">
+			<img class="register__img" src="./images/img2.png" alt="" />
+			<div class="register__box">
+				<h1 class="register__heading">Create Account</h1>
+				<p class="register__text">
+					Go ahead and sign up, let everyone know how awesome you are!
+				</p>
+
+				<form id="register-form">
+					<div class="form__group">
+						<img class="form__icon" src="./images/User.png" alt="" />
+						<input
+							class="form__input"
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Username"
+						/>
+					</div>
+					<p id="username-alert" class="alert"></p>
+
+					<div class="form__group">
+						<img class="form__icon" src="./images/EnvelopeSimple.png" alt="" />
+						<input
+							class="form__input"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+						/>
+					</div>
+					<p id="email-alert" class="alert"></p>
+
+					<div class="form__group">
+						<img class="form__icon" src="./images/LockKey.png" alt="" />
+						<input
+							class="form__input"
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Password"
+						/>
+					</div>
+					<p id="password-alert" class="alert"></p>
+
+					<div class="form__group">
+						<img class="form__icon" src="./images/LockKey.png" alt="" />
+						<input
+							class="form__input"
+							type="password"
+							name="confirm-password"
+							id="confirm-password"
+							placeholder="Confirm Password"
+						/>
+					</div>
+					<p id="confirmpass-alert" class="alert"></p>
+
+					<button id="create-account" class="register__btn" type="submit">
+						Create Account
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

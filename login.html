@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Logged in</title>
+	</head>
+	<body>
+		<div class="login container">
+			<img class="login__img" src="./images/img3.png" alt="" />
+			<div class="login__box">
+				<h1 class="login__heading">Successfully Logged In</h1>
+				<p id="user-email" class="login__text"></p>
+			</div>
+		</div>
+
+		<script>
+			const email = localStorage.getItem('user-email');
+			document.getElementById('user-email').innerHTML = email;
+		</script>
+	</body>
+</html>
